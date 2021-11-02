@@ -1,1 +1,163 @@
+/* primery text color #757575 */
 
+/* title text color #212121 */
+
+/* accent text color #2196F3 */
+
+/* white color #FFFFFF */
+
+:root {
+  --primery-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-text-clor: #2196f3;
+  --background-color: #2f303a;
+  --white-color: #ffffff;
+}
+
+body {
+  color: var(--primery-text-color);
+  font-family: Roboto;
+}
+/* header */
+.list {
+  list-style: none;
+}
+.header {
+  background-color: #ffffff;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+}
+
+.logo {
+  color: var(--title-text-color);
+  text-decoration: none;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+.logo-accent {
+  color: var(--accent-text-clor);
+}
+
+.nav-list .link {
+  color: var(--title-text-color);
+  text-decoration: none;
+}
+.nav-list .link:hover,
+.nav-list .link:focus {
+  color: var(--accent-text-clor);
+}
+.nav-list .current {
+  color: #483d8b;
+}
+
+.nav-cont-list .link {
+  color: var(--primery-text-color);
+  text-decoration: none;
+}
+.nav-cont-list .link:hover,
+.nav-cont-list .link:focus {
+  color: var(--accent-text-clor);
+}
+
+/* Main */
+
+.hero {
+  background-color: var(--background-color);
+}
+.hero-title {
+  color: var(--white-color);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.button {
+  color: var(--white-color);
+  background-color: var(--accent-text-clor);
+}
+
+/* Чем мы занимаемся */
+.section-title {
+  color: var(--title-text-color);
+}
+
+.item {
+  color: var(--title-text-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* наша команда */
+
+.name {
+  color: var(--title-text-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.position {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* footer */
+.address {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+/* Portfolio */
+
+/* main */
+.btn-list .button {
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+}
+.btn-list .button:hover,
+.btn-list .button:focus {
+  background-color: var(--accent-text-clor);
+}
+.work-list {
+  list-style: none;
+}
+.works {
+  color: var(--title-text-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.work-type {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+}
