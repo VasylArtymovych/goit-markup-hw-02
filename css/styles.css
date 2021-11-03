@@ -37,7 +37,7 @@ body {
   text-decoration: none;
   font-family: Raleway;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
@@ -85,25 +85,44 @@ body {
 .button {
   color: var(--white-color);
   background-color: var(--accent-text-clor);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 
-/* Чем мы занимаемся */
+/* Наши качества */
 .section-title {
   color: var(--title-text-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
-
 .item {
   color: var(--title-text-color);
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+.list-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
 
 /* наша команда */
-
 .name {
   color: var(--title-text-color);
   font-style: normal;
@@ -116,7 +135,7 @@ body {
 
 .position {
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -124,9 +143,31 @@ body {
 }
 
 /* footer */
-.address {
+.footer {
+  background-color: var(--background-color);
+}
+.footer-logo {
+  color: var(--white-color);
+  text-decoration: none;
+  font-family: Raleway;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.address {
+  color: var(--white-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+.ftr-link {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -138,6 +179,12 @@ body {
 .btn-list .button {
   color: var(--title-text-color);
   background-color: #f5f4fa;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 .btn-list .button:hover,
 .btn-list .button:focus {
@@ -149,14 +196,14 @@ body {
 .works {
   color: var(--title-text-color);
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 .work-type {
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 2;
   letter-spacing: 0.03em;
