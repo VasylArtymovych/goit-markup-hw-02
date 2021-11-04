@@ -66,7 +66,7 @@ body {
   color: var(--accent-text-clor);
 }
 .current {
-  color: #483d8b;
+  color: var(--accent-text-clor);
 }
 
 .header-cont-link {
@@ -106,6 +106,7 @@ body {
   color: var(--white-color);
   background-color: var(--accent-text-clor);
   cursor: pointer;
+  font-family: inherit;
 }
 
 /* .......................Our Qualities........................... */
@@ -214,6 +215,7 @@ body {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  font-family: inherit;
   color: var(--title-text-color);
 }
 .porfolio-button:hover,
