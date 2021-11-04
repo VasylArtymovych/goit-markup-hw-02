@@ -1,11 +1,3 @@
-/* primery text color #757575 */
-
-/* title text color #212121 */
-
-/* accent text color #2196F3 */
-
-/* white color #FFFFFF */
-
 :root {
   --primery-text-color: #757575;
   --title-text-color: #212121;
@@ -16,27 +8,42 @@
 
 body {
   color: var(--primery-text-color);
-  font-family: Roboto;
+  font-family: Roboto sans-serif;
 }
-/* header */
+
 .list {
   list-style: none;
 }
+.link {
+  text-decoration: none;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* ..........................header .........................*/
+
 .header {
-  background-color: #ffffff;
   font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.4;
   letter-spacing: 0.02em;
+  background-color: var(--white-color);
 }
 
-.logo {
+.header-logo {
   color: var(--title-text-color);
-  text-decoration: none;
   font-family: Raleway;
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
@@ -46,46 +53,49 @@ body {
   color: var(--accent-text-clor);
 }
 
-.nav-list .link {
-  color: var(--title-text-color);
+.header-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   text-decoration: none;
+  color: var(--title-text-color);
 }
-.nav-list .link:hover,
-.nav-list .link:focus {
+.header-link:hover,
+.header-link:focus {
   color: var(--accent-text-clor);
 }
-.nav-list .current {
+.current {
   color: #483d8b;
 }
 
-.nav-cont-list .link {
+.header-cont-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   color: var(--primery-text-color);
-  text-decoration: none;
 }
-.nav-cont-list .link:hover,
-.nav-cont-list .link:focus {
+.header-cont-link:hover,
+.header-cont-link:focus {
   color: var(--accent-text-clor);
 }
 
-/* Main */
+/* .......................Hero........................... */
 
 .hero {
   background-color: var(--background-color);
 }
 .hero-title {
-  color: var(--white-color);
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-}
-.button {
   color: var(--white-color);
-  background-color: var(--accent-text-clor);
-  font-style: normal;
+}
+.hero-button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
@@ -93,118 +103,138 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  color: var(--white-color);
+  background-color: var(--accent-text-clor);
+  cursor: pointer;
 }
 
-/* Наши качества */
-.section-title {
-  color: var(--title-text-color);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-.item {
-  color: var(--title-text-color);
-  font-style: normal;
+/* .......................Our Qualities........................... */
+
+.qualities-second-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-}
-.list-text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
+  color: var(--title-text-color);
 }
 
-/* наша команда */
-.name {
+.qualities-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primery-text-color);
+}
+
+/* .......................What we do........................... */
+.work-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
   color: var(--title-text-color);
-  font-style: normal;
+}
+
+/* .......................Our Team........................... */
+
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.team-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  color: var(--title-text-color);
 }
 
-.position {
-  font-style: normal;
+.team-position {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  color: var(--primery-text-color);
 }
 
-/* footer */
+/* .......................Footer........................... */
+
 .footer {
   background-color: var(--background-color);
 }
+
 .footer-logo {
-  color: var(--white-color);
-  text-decoration: none;
   font-family: Raleway;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-}
-.address {
   color: var(--white-color);
-  font-style: normal;
+}
+
+.address {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.71;
   letter-spacing: 0.03em;
+  color: var(--white-color);
 }
-.ftr-link {
+
+.footer-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
+}
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-text-clor);
 }
 
-/* Portfolio */
+/* .......................Portfolio........................... */
 
-/* main */
-.btn-list .button {
-  color: var(--title-text-color);
+/* .......................Buttons.......................... */
+
+.porfolio-button {
   background-color: #f5f4fa;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  color: var(--title-text-color);
 }
-.btn-list .button:hover,
-.btn-list .button:focus {
+.porfolio-button:hover,
+.porfolio-button:focus {
   background-color: var(--accent-text-clor);
 }
-.work-list {
-  list-style: none;
-}
-.works {
-  color: var(--title-text-color);
-  font-style: normal;
+
+/* .......................List of works......................... */
+
+.portfolio-works {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: var(--title-text-color);
 }
-.work-type {
-  font-style: normal;
+
+.portfolio-work-type {
   font-weight: 400;
   font-size: 16px;
-  line-height: 2;
+  line-height: 1.87;
   letter-spacing: 0.03em;
+  color: var(--primery-text-color);
 }
